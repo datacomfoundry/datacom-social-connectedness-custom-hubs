@@ -16,7 +16,7 @@ import ViewIcon from "@material-ui/icons/ViewList";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Collapse from "@material-ui/core/Collapse";
 import { getServiceDisplayName } from "../utils/ita";
-import HubsCloudLogo from "../assets/images/hubs_cloud_dark.png";
+import HubsCloudLogo from "../assets/images/foundry.png";
 
 const mapStateToProps = state => ({
   resources: getResources(state)
