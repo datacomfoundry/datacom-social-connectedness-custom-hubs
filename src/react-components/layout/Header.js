@@ -32,8 +32,8 @@ export function Header({
         <nav>
           <ul>
             <li>
-              <a href="/" className={styles.homeLink}>
-                <img alt={appName} src={appLogo} />
+              <a href="/" className="home">
+                <Container>Home</Container>
               </a>
             </li>
             {enableSpoke && (

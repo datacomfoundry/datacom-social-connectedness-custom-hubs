@@ -8,7 +8,7 @@ footer {
 
   @media(min-width: theme.$breakpoint-lg) {
     padding: 0;
-    display: flex;
+    // display: flex;
   }
 
   nav {
@@ -54,11 +54,13 @@ footer {
 :local(.container) {
   flex-direction: column;
   align-items: center;
+  max-width: 1140px;
 
   @media(min-width: theme.$breakpoint-lg) {
     height: 80px;
     flex-direction: row;
     align-items: inherit;
+    justify-content: space-between
   }
 }
 
@@ -88,4 +90,19 @@ footer {
   width: 24px;
   display: inline;
   margin-right: 4px;
+}
+
+:local(.foundry) {
+  height: 80px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+:local(.foundry-logo) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
 }

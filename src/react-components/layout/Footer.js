@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl";
 import styles from "./Footer.scss";
 import discordLogoUrl from "../../assets/images/discord-logo-small.png";
 import { Container } from "./Container";
+import FoundryLogo from "../../assets/images/datacom/foundry_black.png";
 
 export function Footer({
   hidePoweredBy,
@@ -37,7 +38,10 @@ export function Footer({
             />
           )}
         </div>
-        <nav>
+        <div className={styles.foundry}>
+          <img className={styles.foundryLogo} src={FoundryLogo} />
+        </div>
+        {/* <nav>
           <ul>
             {showDiscordBotLink && (
               <li>
@@ -98,7 +102,7 @@ export function Footer({
               </li>
             )}
           </ul>
-        </nav>
+        </nav> */}
       </Container>
     </footer>
   );

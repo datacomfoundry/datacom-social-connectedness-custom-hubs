@@ -139,6 +139,7 @@
     margin: 0;
     display: block;
     padding-bottom: 4px;
+    color:white;
   }
 }
 
@@ -201,7 +202,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: theme.$tile-text-color;
+  color: white;
   font-weight: theme.$font-weight-bold;
   border-radius: 12px;
   flex: 1;
