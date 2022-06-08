@@ -9,15 +9,15 @@ export function CreateRoomButton() {
 
   return (
     <Button
-      thick={breakpoint === "sm" || breakpoint === "md"}
-      xl={breakpoint !== "sm" && breakpoint !== "md"}
+      // thick={breakpoint === "sm" || breakpoint === "md"}
+      // xl={breakpoint !== "sm" && breakpoint !== "md"}
       preset="landing"
       onClick={e => {
         e.preventDefault();
         createAndRedirectToNewHub(null, null, false);
       }}
     >
-      <FormattedMessage id="create-room-button" defaultMessage="Create Room" />
+      <FormattedMessage id="create-room-button" defaultMessage="Create a Room" />
     </Button>
   );
 }

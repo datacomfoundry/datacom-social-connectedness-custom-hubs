@@ -83,8 +83,11 @@ export function HomePage() {
           </div> */}
           <div className={styles.appInfo}>
             <div className={styles.appDescription}>{configs.translation("app-description")}</div>
-            {canCreateRooms && <CreateRoomButton />}
+            {/* {canCreateRooms && <CreateRoomButton />} */}
             {/* <PWAButton /> */}
+            <Button xl preset="landing" as="a" href="https://datacomsocialconnectedness.com/gDu7LHo/lobby">
+              <FormattedMessage id="home-page.have-code" defaultMessage="Join Room" />
+            </Button>
           </div>
           <div className={styles.heroImageContainer}>
             {/* <img
@@ -187,9 +190,10 @@ export function HomePage() {
       )} */}
       <Container>
         <Column center grow>
-          <Button thin preset="landing" as="a" href="/link">
+          {canCreateRooms && <CreateRoomButton />}
+          {/* <Button thin preset="landing" as="a" href="/link">
             <FormattedMessage id="home-page.have-code" defaultMessage="Have a room code?" />
-          </Button>
+          </Button> */}
         </Column>
       </Container>
       {isHmc ? (
