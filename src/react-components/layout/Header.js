@@ -8,6 +8,8 @@ import styles from "./Header.scss";
 import { Container } from "./Container";
 import { SocialBar } from "../home/SocialBar";
 import { SignInButton } from "../home/SignInButton";
+import { createAndRedirectToNewHub } from "../../utils/phoenix-utils";
+
 
 export function Header({
   appName,
@@ -33,10 +35,26 @@ export function Header({
           <ul>
             <li>
               <a href="/" className="home">
-                <Container>Home</Container>
+                <FormattedMessage id="header.home" defaultMessage="Home" />
               </a>
             </li>
-            {enableSpoke && (
+            {/* <li>
+              <a className="create-room"
+                onClick={e => {
+                  e.preventDefault();
+                  createAndRedirectToNewHub(null, null, false);
+                }}
+                rel="noreferrer noopener"
+              >
+                <FormattedMessage id="header.create" defaultMessage="Create Room" />
+              </a>
+            </li> */}
+            <li>
+              <a href="/" className="asset-dropdown">
+              <FormattedMessage id="header.assets" defaultMessage="Get Our 3D Assets" />
+              </a>
+            </li>
+            {/* {enableSpoke && (
               <li>
                 <a href="/spoke">
                   {isHmc ? <FormattedMessage id="header.spoke" defaultMessage="Spoke" /> : editorName}
@@ -77,7 +95,7 @@ export function Header({
                   <FormattedMessage id="header.labs" defaultMessage="Labs" />
                 </a>
               </li>
-            )}
+            )} */}
             {isAdmin && (
               <li>
                 <a href="/admin" rel="noreferrer noopener">

@@ -77,7 +77,7 @@ function BaseTile({ as: TileComponent, className, name, description, tall, wide,
       <div className={styles.thumbnailContainer}>{children}</div>
       {(name || description) && (
         <div className={styles.info}>
-          <b>{name}</b>
+          {/* <b>{name}</b> */}
           {description && <small className={styles.description}>{description}</small>}
         </div>
       )}
