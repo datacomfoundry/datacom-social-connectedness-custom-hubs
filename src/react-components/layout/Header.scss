@@ -2,6 +2,7 @@
 
 header {
   display: block;
+  background-color: transparent;
   
 
   @media(min-width: theme.$breakpoint-lg) {
@@ -25,7 +26,7 @@ header {
 
     li {
       &:first-child {
-        padding-top: 20px;
+        padding-top: 2px;
         @media(min-width: theme.$breakpoint-lg) {
           img {
             width: 100%;
@@ -68,7 +69,7 @@ header {
   align-items: center;
 
   @media(min-width: theme.$breakpoint-lg) {
-    height: 140px;
+    height: 60px;
     flex-direction: row;
     align-items: inherit;
   }
@@ -84,6 +85,10 @@ header {
     }
   }
 }
+:local(.home) {
+  margin-bottom: 300px;
+}
+
 :local(.sign-in) {
   display: none;
   flex-direction: column;

@@ -74,20 +74,20 @@ export function HomePage() {
           ) : (
             <SignInButton mobile />
           )}
-          <div className={styles.logoContainer}>
+          {/* <div className={styles.logoContainer}>
             {isHmc ? (
               <HmcLogo className="hmc-logo" />
             ) : (
               <img alt={configs.translation("app-name")} src={getAppLogo()} />
             )}
-          </div>
+          </div> */}
           <div className={styles.appInfo}>
             <div className={styles.appDescription}>{configs.translation("app-description")}</div>
             {canCreateRooms && <CreateRoomButton />}
-            <PWAButton />
+            {/* <PWAButton /> */}
           </div>
           <div className={styles.heroImageContainer}>
-            <img
+            {/* <img
               alt={intl.formatMessage(
                 {
                   id: "home-page.hero-image-alt",
@@ -96,7 +96,7 @@ export function HomePage() {
                 { appName: configs.translation("app-name") }
               )}
               src={configs.image("home_background")}
-            />
+            /> */}
           </div>
         </div>
       </Container>
@@ -143,9 +143,9 @@ export function HomePage() {
       )}
       {sortedPublicRooms.length > 0 && (
         <Container className={styles.roomsContainer}>
-          <h3 className={styles.roomsHeading}>
-            <FormattedMessage id="home-page.public--rooms" defaultMessage="Public Rooms" />
-          </h3>
+          {/* <h3 className={styles.roomsHeading}>
+            <FormattedMessage id="home-page.public--rooms" defaultMessage="Rooms" />
+          </h3> */}
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
               {sortedPublicRooms.map(room => {
@@ -163,7 +163,7 @@ export function HomePage() {
           </Column>
         </Container>
       )}
-      {sortedFavoriteRooms.length > 0 && (
+      {/* {sortedFavoriteRooms.length > 0 && (
         <Container className={styles.roomsContainer}>
           <h3 className={styles.roomsHeading}>
             <FormattedMessage id="home-page.favorite-rooms" defaultMessage="Favorite Rooms" />
@@ -184,7 +184,7 @@ export function HomePage() {
             </MediaGrid>
           </Column>
         </Container>
-      )}
+      )} */}
       <Container>
         <Column center grow>
           <Button thin preset="landing" as="a" href="/link">
