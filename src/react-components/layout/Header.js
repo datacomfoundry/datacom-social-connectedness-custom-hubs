@@ -50,8 +50,11 @@ export function Header({
               </a>
             </li> */}
             <li>
-              <a href="/" className="asset-dropdown">
-              <FormattedMessage id="header.assets" defaultMessage="Get Our 3D Assets" />
+              <a
+                href="https://github.com/datacomfoundry/datacom-social-connectedness-custom-hubs/tree/master/doc/asset-packs"
+                className="asset-dropdown"
+              >
+                <FormattedMessage id="header.assets" defaultMessage="Get Our 3D Assets" />
               </a>
             </li>
             {/* {enableSpoke && (
